@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Service1Service } from 'src/app/common/service1.service';
 
 @Component({
@@ -6,11 +6,12 @@ import { Service1Service } from 'src/app/common/service1.service';
   templateUrl: './educacion.component.html',
   styleUrls: ['./educacion.component.css']
 })
-export class EducacionComponent {
+export class EducacionComponent implements OnInit{
 
   miPortafolio: any ;
-
-  constructor( private common:Service1Service, ){}
+  
+  constructor( private common:Service1Service,){
+  }
 
   ngOnInit():void{
     this.common.obtenerDatos().subscribe(data =>
@@ -19,6 +20,5 @@ export class EducacionComponent {
         this.miPortafolio = data;
       }
     );
-  }
-
+  };
 }

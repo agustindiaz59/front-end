@@ -12,9 +12,10 @@
         </a>
       </div>
     </div>
+
     <!--lista de experiencia-->
     <ul>
-      <li>
+      <li  *ngFor="let elemento of miPortafolio.trabajos; let i = index">
         <div class="row">
 
           <div class="col-1">
@@ -22,8 +23,8 @@
           </div>
 
           <div class="col">
-            <h2>Fullstack developer</h2>
-            <p>Argentina programa #YoProgramo</p>
+            <h2>{{elemento}}</h2>
+            <p>{{miPortafolio.description[i].cuerpo}}</p>
           </div>
 
           <div id="editar-o-eliminar" class="col">

@@ -9,6 +9,7 @@ import { EducacionComponent } from './educacion/educacion/educacion.component';
 import { ProyectosComponent } from './proyectos/proyectos/proyectos.component';
 import { AptitudesComponent } from './aptitudes/aptitudes/aptitudes.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({

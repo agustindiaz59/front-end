@@ -3,11 +3,17 @@
         "ubicacion":"Bella Vista, Tucuman (Argentina)",
         "institucion":"Escuela Tecnica N°1, Bella Vista",
         "info":"Tengo 20 años, recibido de escuela tecnica orientacion en equipos e instalaciones electromecanicas",
-        "trabajo": "Fullstack developer",
-        "description": "Argentina programa #YoProgramo",
+        
+        "trabajos":[
+            "Fullstack developer"
+        ],
+
+        "description":[
+            { "cuerpo":"Argentina programa #YoProgramo"}
+        ],
+    
         "orientacion": "Tecnico electromecanico",
 
-        
         "backImage": "../assets/banner.jpg",
         "profileImage": "../assets/foto_de_perfil.jpg",
         "edit": "../assets/edicion.png",
